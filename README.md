@@ -1,8 +1,6 @@
 # ToolReplacementProblem
 Comparison of IGA and KTNS algorithms for the Tool Replacement Problem
 
-A draft of the paper available at https://arxiv.org/abs/2205.06042
-
 To compile run:
 
 g++ IGA_vs_KTNS_comparison.cpp -o IGA_vs_KTNS_comparison.exe -O3
