@@ -66,6 +66,7 @@ struct Data {
         for (int i = 0; i < numJobs; i++) {
             std::string str = "";
             for (auto v : jobsToolsMatrix[i]) { str += std::to_string(v); }
+	    std::reverse(str.begin(), str.end());
             jobnum_to_bytes_bitset[i] = std::bitset<BITSET_SIZE>(str);
             jobnum_to_bytes[i] = std::bitset<64>(str).to_ullong();
         }
